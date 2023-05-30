@@ -6,12 +6,12 @@ import { router } from './Routes/Routes';
 import { HelmetProvider } from 'react-helmet-async';
 import AuthProvider from './providers/AuthProvider';
 import {
-  useQueryClient,
+  QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
 
 
-const queryClient = new useQueryClient()
+const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
